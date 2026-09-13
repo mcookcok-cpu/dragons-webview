@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * gap: file: data: content: blob: ws: wss: 'unsafe-inline' 'unsafe-eval';" />
+  <title>Dragons</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page" id="homePage">
+    <div class="card">
+      <img class="logo" src="img/logo.png" alt="Dragons" />
+      <h1 class="title">Dragons</h1>
+      <p class="subtitle">WebView Android untuk membuka BOTTOAI atau layanan web lokal.</p>
+
+      <label class="field-label" for="serverUrl">Alamat server</label>
+      <input
+        class="field-input"
+        type="text"
+        id="serverUrl"
+        inputmode="url"
+        autocapitalize="none"
+        autocorrect="off"
+        spellcheck="false"
+        placeholder="http://192.168.1.100:2020"
+      />
+
+      <div class="btn-row">
+        <button class="btn btn-primary" id="connectBtn">Hubungkan</button>
+        <button class="btn btn-secondary" id="resetBtn">Reset</button>
+      </div>
+
+      <p class="hint">
+        Pastikan HP dan server berada di jaringan LAN yang sama. HTTP lokal sudah diizinkan untuk WebView ini.
+      </p>
+      <p class="error" id="errorMsg" hidden></p>
+    </div>
+  </div>
+
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

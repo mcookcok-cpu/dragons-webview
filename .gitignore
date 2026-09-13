@@ -1,0 +1,7 @@
+platforms/
+plugins/android.json
+plugins/ios.json
+plugins/fetch.json
+node_modules/
+.DS_Store
+*.log

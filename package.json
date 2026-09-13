@@ -1,0 +1,23 @@
+{
+  "name": "dragons-webview",
+  "displayName": "Dragons",
+  "version": "1.0.0",
+  "description": "WebView Android untuk membuka BOTTOAI atau layanan web lokal, dengan TTS native (window.BottoNativeTTS) dan file downloader bawaan.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cordova build android",
+    "build:release": "cordova build android --release"
+  },
+  "devDependencies": {
+    "cordova-android": "^13.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-bottonativetts": {},
+      "cordova-plugin-webview-downloader": {}
+    }
+  }
+}

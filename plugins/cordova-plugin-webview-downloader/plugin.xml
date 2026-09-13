@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-webview-downloader"
+        version="1.0.0">
+
+    <name>WebViewDownloader</name>
+    <description>
+        Menangkap link download (URL biasa lewat DownloadListener, atau
+        blob: lewat window.AndroidDownloader.saveBase64) dan menyimpannya
+        ke folder Downloads publik lewat Android DownloadManager / MediaStore.
+    </description>
+    <license>Apache-2.0</license>
+
+    <engines>
+        <engine name="cordova-android" version=">=9.0.0" />
+    </engines>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WebViewDownloader">
+                <param name="android-package" value="com.dragons.webview.plugin.WebViewDownloaderPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+        </config-file>
+
+        <source-file src="src/android/WebViewDownloaderPlugin.java"
+                     target-dir="src/com/dragons/webview/plugin" />
+    </platform>
+</plugin>
