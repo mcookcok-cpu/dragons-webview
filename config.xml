@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.dragon.ecpucx" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Dragon Echo</name>
+<widget id="com.brand.psfwkn" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Vanguard X</name>
     <description>
         WebView Android untuk membuka BOTTOAI atau layanan web lokal lain di jaringan LAN.
     </description>
